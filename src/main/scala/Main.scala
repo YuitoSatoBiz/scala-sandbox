@@ -3,6 +3,11 @@
   */
 object Main {
   def main(args: Array[String]): Unit = {
-    println("hello")
+    val list: MyList[Int] = 2::MyCons(1, MyNil)
+    list.map { a =>
+      println(a)
+      a
+    }
+    //TODO  :::がMyConsで取り扱っているため死ぬ
   }
 }
