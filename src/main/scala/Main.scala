@@ -3,6 +3,7 @@
   */
 object Main {
   def main(args: Array[String]): Unit = {
+    new List(1, 2)
     val list: MyList[Int] = 2::MyCons(1, MyNil)
     list.map { a =>
       println(a)
