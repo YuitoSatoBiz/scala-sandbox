@@ -23,15 +23,15 @@ sealed trait MyList[+A] {
   def :::[C >: A](prefix: MyList[C]): MyList[C]
 }
 
-case class MyCons[B](hd: B, tl: MyList[B]) extends MyList[B] {
+case class MyCons[A](hd: A, tl: MyList[A]) extends MyList[A] {
 
-  override def head: B = hd
+  override def head: A = hd
 
-  override def tail: MyList[B] = tl
+  override def tail: MyList[A] = tl
 
   override def isEmpty: Boolean = false
 
-  override def map[R](f: (B) => R): MyList[R] = {
+  override def map[B](f: (A) => B): MyList[B] = {
     if (isEmpty) {
       MyNil
     } else {
@@ -39,18 +39,18 @@ case class MyCons[B](hd: B, tl: MyList[B]) extends MyList[B] {
     }
   }
 
-  override def foreach(f: (B) => Unit): Unit = {
+  override def foreach(f: (A) => Unit): Unit = {
     if (!isEmpty) {
       f(head)
       tail.foreach(f)
     }
   }
 
-  override def ::[C >: B](x: C): MyList[C] = {
+  override def ::[C >: A](x: C): MyList[C] = {
     MyCons(x, this)
   }
 
-  override def :::[C >: B](prefix: MyList[C]): MyList[C] = {
+  override def :::[C >: A](prefix: MyList[C]): MyList[C] = {
     if (prefix.isEmpty) {
       this
     } else {
@@ -67,7 +67,7 @@ case object MyNil extends MyList[Nothing] {
 
   override def isEmpty: Boolean = true
 
-  override def map[R](f: (Nothing) => R): MyList[R] = MyNil
+  override def map[B](f: (Nothing) => B): MyList[B] = MyNil
 
   override def foreach(f: (Nothing) => Unit): Unit = {}
 
