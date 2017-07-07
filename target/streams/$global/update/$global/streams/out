@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/satoyuito/projects/scala-sandbox/}scala-sandbox...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/yuito.sato/works/scala-sandbox/}scala-sandbox...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#scala-sandbox_2.12;1.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -266,19 +266,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.2!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.3!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 410ms :: artifacts dl 12ms[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 compile produced in /Users/satoyuito/projects/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 runtime produced in /Users/satoyuito/projects/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 test produced in /Users/satoyuito/projects/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 provided produced in /Users/satoyuito/projects/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 optional produced in /Users/satoyuito/projects/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 compile-internal produced in /Users/satoyuito/projects/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 runtime-internal produced in /Users/satoyuito/projects/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 test-internal produced in /Users/satoyuito/projects/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 plugin produced in /Users/satoyuito/projects/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 sources produced in /Users/satoyuito/projects/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 docs produced in /Users/satoyuito/projects/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 pom produced in /Users/satoyuito/projects/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 scala-tool produced in /Users/satoyuito/projects/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (410ms resolve - 12ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 87ms :: artifacts dl 3ms[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 compile produced in /Users/yuito.sato/works/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 runtime produced in /Users/yuito.sato/works/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 test produced in /Users/yuito.sato/works/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 provided produced in /Users/yuito.sato/works/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 optional produced in /Users/yuito.sato/works/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 compile-internal produced in /Users/yuito.sato/works/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 runtime-internal produced in /Users/yuito.sato/works/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 test-internal produced in /Users/yuito.sato/works/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 plugin produced in /Users/yuito.sato/works/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 sources produced in /Users/yuito.sato/works/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 docs produced in /Users/yuito.sato/works/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 pom produced in /Users/yuito.sato/works/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-sandbox_2.12;1.0 scala-tool produced in /Users/yuito.sato/works/scala-sandbox/target/resolution-cache/reports/default-scala-sandbox_2.12-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (87ms resolve - 3ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

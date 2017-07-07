@@ -2,7 +2,8 @@
   * @author yuito.sato
   */
 object MyList {
-  def apply[A](as: A*): MyList[A] = ???
+
+  def apply[A](head: A, tail: MyList[A]): MyList[A] = MyCons(head, tail)
 }
 
 sealed trait MyList[+A] {
@@ -14,6 +15,8 @@ sealed trait MyList[+A] {
   def isEmpty: Boolean
 
   def map[B](f: A => B): MyList[B]
+
+  def foreach(f: A => Unit): Unit
   
   def ::[C >: A](x: C): MyList[C]
 
@@ -33,6 +36,13 @@ case class MyCons[B](hd: B, tl: MyList[B]) extends MyList[B] {
       MyNil
     } else {
       MyCons(f(head), tail.map(f))
+    }
+  }
+
+  override def foreach(f: (B) => Unit): Unit = {
+    if (!isEmpty) {
+      f(head)
+      tail.foreach(f)
     }
   }
 
@@ -58,6 +68,8 @@ case object MyNil extends MyList[Nothing] {
   override def isEmpty: Boolean = true
 
   override def map[R](f: (Nothing) => R): MyList[R] = MyNil
+
+  override def foreach(f: (Nothing) => Unit): Unit = {}
 
   override def ::[C >: Nothing](x: C): MyList[C] = MyCons(x, MyNil)
 
