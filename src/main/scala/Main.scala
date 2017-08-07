@@ -1,3 +1,5 @@
+import scala.collection.mutable.ListBuffer
+
 /**
   * Created by satoyuito on 2017/06/19.
   */
@@ -13,5 +15,7 @@ object Main {
     list4.foreach { e =>
       println(e)
     }
+
+    ListBuffer
   }
 }
