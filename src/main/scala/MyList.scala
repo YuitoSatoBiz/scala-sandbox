@@ -1,3 +1,5 @@
+import java.nio.Buffer
+
 /**
   * @author yuito.sato
   */
@@ -81,7 +83,7 @@ case object MyNil extends MyList[Nothing] {
 
   override def map[B](f: (Nothing) => B): MyList[B] = MyNil
 
-  override def foreach(f: (Nothing) => Unit): Unit = {}
+  override def foreach(f: (Nothing) => Unit): Unit = ()
 
   override def ::[C >: Nothing](x: C): MyList[C] = MyCons(x, MyNil)
 
