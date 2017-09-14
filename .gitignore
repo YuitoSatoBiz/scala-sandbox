@@ -1,8 +1,8 @@
 logs
 target
-/.idea
+/.idea/*
 /.classpath
-/.project
+/.project/*
 /.settings
 /RUNNING_PID
 .DS_Store
