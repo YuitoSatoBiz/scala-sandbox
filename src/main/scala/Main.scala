@@ -4,6 +4,6 @@
 object Main {
 
   def main(args: Array[String]): Unit = {
-    PatternMatchingPractice.test()
+    SortPractice.test()
   }
 }
