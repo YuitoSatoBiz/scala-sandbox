@@ -1,6 +1,7 @@
-import scala.concurrent.{Await, Future}
+import scala.concurrent.{ Await, Future }
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._
+import scala.util.{ Failure, Success }
 
 /**
   * Created by satoyuito on 2017/08/06.
@@ -10,6 +11,7 @@ object FuturePractice {
   def test(): Unit = {
     mapTest()
     foldLeftTest()
+    Seq(1,2,3).foldLeft()
   }
 
   /**
@@ -25,17 +27,42 @@ object FuturePractice {
   def mapTest(): Unit = {
     val ints = List(1, 2, 3)
     val secs = List(7, 1, 2)
-    val result = ints.map { i =>
+    def result = ints.map { i =>
       Future {
         val sec = secs(i - 1)
         Thread.sleep(1000 * sec)
         val res = i + 1
+        if (i == 2) {
+          throw new Exception("え？")
+        }
         println(res)
         res
       }
     }
-    Thread.sleep(6000)
-    result.foreach(i => println(i))
+    val f = Future.sequence(result)
+    f.onComplete{
+      case Success(resultInts) => println(resultInts.mkString)
+      case Failure(e) => println(e.getMessage)
+    }
+    Await.ready(f, Duration.Inf)
+
+
+
+
+    //    val f = Future.sequence(result)
+//    f.onSuccess{ case result => println(result.mkString) }
+
+
+//    ints.map { i =>
+//      Future {
+//        val sec = secs(i - 1)
+//        Thread.sleep(1000 * sec)
+//        val res = i + 1
+//        println(res)
+//        res
+//      }
+//    }
+//    result.foreach(i => println(i))
   }
 
   /**

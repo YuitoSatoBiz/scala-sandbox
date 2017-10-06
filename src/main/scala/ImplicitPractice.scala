@@ -1,5 +1,6 @@
 //import implicitPractice.ImplicitSupplier._
 import implicitPractice.StringBox
+import implicitPractice.ImplicitHelpers._
 
 /**
   * Created by satoyuito on 2017/08/06.
@@ -7,10 +8,12 @@ import implicitPractice.StringBox
 object ImplicitPractice {
 
   def test(): Unit = {
-    val text = "クールっすね"
-    if (keigoCheck(text)) {
-      println("Super COOOL!!!")
-    }
+//    val text = "クールっすね"
+    //    if (keigoCheck(text)) {
+    //      println("Super COOOL!!!")
+    //    }
+
+    println("Good".formalize)
   }
 
   /**

@@ -17,6 +17,13 @@ object MyList {
     list4.foreach { e =>
       println(e)
     }
+
+
+
+    List(1,2,3).foldRight(0) { (acc, x) =>  acc + x }
+    List(1,2,3).foldLeft(0) { (x, acc) => x + acc }
+
+
   }
 }
 
@@ -35,6 +42,14 @@ sealed trait MyList[+A] {
   def ::[C >: A](x: C): MyList[C]
 
   def :::[C >: A](prefix: MyList[C]): MyList[C]
+
+  def foldRight[B](zero: B)(f: (A, B) => B): B =
+    if (this.isEmpty) zero
+    else f(head, tail.foldRight(zero)(f))
+
+  def foldLeft[B](zero: B)(f: (A, B) => B): B =
+    if (this.isEmpty) zero
+    else tail.foldLeft(f(zero, head))(f)
 }
 
 case class MyCons[A](hd: A, tl: MyList[A]) extends MyList[A] {
