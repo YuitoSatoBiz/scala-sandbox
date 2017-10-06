@@ -9,3 +9,5 @@ target
 .DS_Store
 git
 *.iml
+src/main/scala/hrmony/
+src/main/scala/implicitPractice/ImplicitHelpers.scala
