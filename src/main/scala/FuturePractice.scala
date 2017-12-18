@@ -11,7 +11,6 @@ object FuturePractice {
   def test(): Unit = {
     mapTest()
     foldLeftTest()
-    Seq(1,2,3).foldLeft()
   }
 
   /**
