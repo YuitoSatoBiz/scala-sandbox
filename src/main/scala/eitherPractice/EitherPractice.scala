@@ -4,12 +4,25 @@ case class User(email: String, password: String)
 
 object UserService {
   def signUp(email: String, password: String): Either[PasswordError, User] = {
+    val resultPassword = checkPasswordLength(password: String)
+    resultPassword.map(pass => User(email, pass))
+    
+//    if (password.length > 50) {
+//      Left(TooLongPasswordError)
+//    } else if (password.length < 10) {
+//      Left(TooShortPasswordError)
+//    } else {
+//      Right(User(email, password))
+//    }
+  }
+
+  private def checkPasswordLength(password: String): Either[PasswordError, String] = {
     if (password.length > 50) {
       Left(TooLongPasswordError)
     } else if (password.length < 10) {
       Left(TooShortPasswordError)
     } else {
-      Right(User(email, password))
+      Right(password)
     }
   }
 }
