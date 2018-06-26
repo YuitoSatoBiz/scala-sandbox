@@ -1,6 +1,5 @@
 //import implicitPractice.ImplicitSupplier._
 import implicitPractice.StringBox
-import implicitPractice.ImplicitHelpers._
 
 /**
   * Created by satoyuito on 2017/08/06.
@@ -13,7 +12,7 @@ object ImplicitPractice {
     //      println("Super COOOL!!!")
     //    }
 
-    println("Good".formalize)
+//    println("Good".formalize)
   }
 
   /**
