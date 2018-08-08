@@ -7,7 +7,7 @@ import isoPractice.Iso
 object Main {
 
   def main(args: Array[String]): Unit = {
-//    IsoPractice.test()
+    //    IsoPractice.test()
     MyList.test()
   }
 
